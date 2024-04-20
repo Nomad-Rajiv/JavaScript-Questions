@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+
+  <script>
+    
+// var myVar = "foo";
+// (function () {
+// console.log("Original value was: " + myVar);
+// var myVar = "bar";
+// console.log("New value is: " + myVar);
+// })();
+// function hoistingExample() {
+//   console.log("Value of a in local scope: ", a);
+//  }
+//  console.log("Value of a in global scope: ", a);
+//  var a = 1;
+//  hoistingExample();
+
+
+
+// function foo(){
+//   let a = b= 0;
+//   a++;
+//   return a;
+//   }
+//   foo()
+//   typeof(a);
+//   typeof b;
+
+  
+  function printName(){
+    const name = 'workattech';
+    console.log(name);
+  }
+  printName()
+  console.log(name);
+
+  let x = 5;
+  if(x=== 5){
+    const a = x;
+    console.log(a);
+  }
+  // console.log(a);
+
+  const stringOne = 'I am form the globel scope';
+  function one(){
+    const stringTwo = 'I am from the outer scope';
+    function Two(){
+      const stringThree = 'workteche';
+      console.log(stringThree);
+      console.log(stringTwo);
+      console.log(stringOne);
+      console.log(stringZero);  
+    }
+    Two();
+  }
+one();
+  </script>
+</body>
+</html>
