@@ -1,7 +1,7 @@
 // Write a function to calculate the factorial of a number. ( Using recursion )
 
 const factorial = (num) =>{
-    if(num === 1){
+    if(num === 1 || num === 0){
       return 1;
     }
     else{
@@ -10,4 +10,4 @@ const factorial = (num) =>{
 };
 
 
-console.log(factorial(10));
+console.log(factorial(0));
